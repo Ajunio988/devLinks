@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-br" class="dark">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlexandreFelix_DevLinks</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="lang-toggle">
+      <button id="lang-btn" type="button" aria-label="Alternar idioma">
+        <img id="flag-br" src="./assets/br.svg" alt="Bandeira do Brasil" class="flag"/>
+        <span id="arrow">
+          <ion-icon name="arrow-forward-outline" id="arrowForward"></ion-icon>
+          <ion-icon name="arrow-back-outline" id="arrowBack"></ion-icon>
+        </span>
+        <img id="flag-usa" src="./assets/en.svg" alt="Bandeira dos Estados Unidos" class="flag"/>
+      </button>
+    </div>
+
+    <div id="container">
+      <div id="profile">
+        <img src="./assets/3x4 IA.jpg" alt="Imagem de Perfil" />
+        <h1 data-i18n="profile.name">Alexandre Felix</h1>
+        <!-- <p>Software Engineer</p> -->
+        <p data-i18n="profile.job">Engenheiro de Software</p>
+      </div>
+
+      <div id="switch" onclick="toggleMode()">
+        <button>
+          <!-- <img src="./assets/MoonStars.svg" alt="Botão de alternância de tema"> -->
+        </button>
+        <span></span>
+      </div>
+
+      <div id="listas">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/alexandre-felix-ba0aa5237/"
+              target="_blank">
+              <ion-icon id="social-links" name="logo-linkedin"></ion-icon>
+              <span data-i18n="social.linkedIn">Meu LinkedIn</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/ajunio988" target="_blank">
+              <ion-icon id="social-links" name="logo-github"></ion-icon>
+              <span data-i18n="social.github">Meu GitHub</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">
+              <ion-icon id="social-links" name="at-circle-outline"></ion-icon>
+              <span data-i18n="portfolio">Veja o meu portfólio</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">
+              <ion-icon id="social-links" name="mail-outline"></ion-icon>
+              <span data-i18n="contactEmail">Entre em contato</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="social-media-title">
+        <p data-i18n="social.title">Redes Sociais:</p>
+      </div>
+
+      <div id="social-media">
+        <a href="https://instagram.com/alexandrefelix_021" target="_blank" aria-label="Instagram">
+          <ion-icon id="social-links" name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.tiktok.com/@ajunio988" target="_blank" aria-label="TikTok">
+          <ion-icon id="social-links" name="logo-tiktok"></ion-icon>
+        </a>
+        <!-- <a href="https://wa.me/" target="_blank" arial label="WhatsApp">
+        <ion-icon id="social-links" name="logo-whatsapp"> </ion-icon>
+      </a> -->
+      </div>
+
+      <footer>
+        <span data-i18n="social.description"
+          >Siga-me nas redes sociais e entre em contato para projetos.</span
+        >
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
