@@ -1,4 +1,6 @@
-<p aling="center">
+<h1 align="center">Projeto DevLinks<h1> <br>
+
+<p align="center">
   <img alt="Projeto devLinks" src=".github/preview.jpg" width="100%">
 </p> <br>
 
