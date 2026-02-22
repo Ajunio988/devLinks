@@ -46,10 +46,10 @@ body {
 
 #container {
   width: 100%;
-  max-width: 800px;
-  margin: 56px auto 0px;
+  max-width: 380px;
+  margin: 40px auto 0px;
 
-  padding: 0px 25px;
+  padding: 0px 15px;
 }
 
 #profile {
@@ -148,7 +148,7 @@ ul {
       align-items: center;
       justify-content: center;
 
-      padding: 15px 25px;
+      padding: 12px 20px;
 
       text-decoration: none;
       font-weight: 500;
@@ -185,7 +185,7 @@ ul {
 #social-media {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
 
   padding: 15px 0px;
 
@@ -224,6 +224,86 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+ /* Responsive Design */
+@media (min-width: 500px) {
+  #container {
+    max-width: 580px;
+    padding: 0px 24px;
+
+    font-size: 16px;
+
+    footer {
+      font-size: 16px;
+    }
+  }
+
+  #profile img{
+    width: 180px;
+
+    p {
+      font-size: 30px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  #listas {
+    margin: 40px 0;
+
+    a {
+      padding: 15px 26px;
+    }
+  }
+
+  #social-media {
+    gap: 28px;
+    font-size: 32px;
+  }
+
+}
+
+@media (min-width: 900px) {
+  #container {
+    max-width: 800px;
+    padding: 0px 30px;
+
+    font-size: 20px;
+
+    footer {
+      font-size: 18px;
+    }
+  }
+
+  #profile {
+    img {
+      width: 200px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  #listas {
+    margin: 80px 0;
+
+    a {
+      padding: 20px 36px;
+    }
+  }
+
+  #social-media {
+    gap: 40px;
+    font-size: 36px;
   }
 }
 
