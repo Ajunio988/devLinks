@@ -42,11 +42,16 @@ body {
   /* background: url(./assets/bg-mobile.jpg) no-repeat top center/cover*/
 
   min-height: 100dvh; /* for modern browsers */
-  min-height: -webkit-fill-available;  /* for Safari on iOS */
+  min-height: -webkit-fill-available; /* for Safari on iOS */
   height: 100%; /* fallback for older browsers */
 
-  padding-bottom: max(20px, env(safe-area-inset-bottom)); /* assegura que haja um espaçamento mínimo de 20px, mas também leva em consideração o espaço seguro do dispositivo */
-  margin-bottom: env(safe-area-inset-bottom); /* adiciona uma margem inferior para evitar que o conteúdo fique muito próximo do limite inferior da tela */
+  padding-bottom: max(
+    20px,
+    env(safe-area-inset-bottom)
+  ); /* assegura que haja um espaçamento mínimo de 20px, mas também leva em consideração o espaço seguro do dispositivo */
+  margin-bottom: env(
+    safe-area-inset-bottom
+  ); /* adiciona uma margem inferior para evitar que o conteúdo fique muito próximo do limite inferior da tela */
 }
 
 #container {
@@ -233,7 +238,7 @@ footer {
   }
 }
 
- /* Responsive Design */
+/* Responsive Design */
 @media (min-width: 500px) {
   #container {
     max-width: 580px;
@@ -246,7 +251,7 @@ footer {
     }
   }
 
-  #profile img{
+  #profile img {
     width: 180px;
 
     p {
@@ -270,7 +275,6 @@ footer {
     gap: 28px;
     font-size: 32px;
   }
-
 }
 
 @media (min-width: 900px) {
@@ -392,4 +396,8 @@ footer {
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
   }
+}
+
+[data-i18n] {
+  transition: opacity 0.5s ease;
 }
