@@ -30,7 +30,7 @@
 
 body * {
   font-family: "Inter", sans-serif;
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 body {
@@ -225,11 +225,11 @@ footer {
 
 @mediaquery (min-width: 700px) {
   .dark {
-    --bg-url: url(./assets/bg-desktop.jpg);
+    --bg-url: url(./assets/bg-desktop.jpg) !important;
   }
 
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
+    --bg-url: url(./assets/bg-desktop-light.jpg) !important;
   }
 }
 
