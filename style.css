@@ -41,11 +41,17 @@ body {
 
   /* background: url(./assets/bg-mobile.jpg) no-repeat top center/cover*/
 
-  height: 100vh;
+  min-height: 100dvh; /* for modern browsers */
+  min-height: -webkit-fill-available;  /* for Safari on iOS */
+  height: 100%; /* fallback for older browsers */
+
+  padding-bottom: max(20px, env(safe-area-inset-bottom)); /* assegura que haja um espaçamento mínimo de 20px, mas também leva em consideração o espaço seguro do dispositivo */
+  margin-bottom: env(safe-area-inset-bottom); /* adiciona uma margem inferior para evitar que o conteúdo fique muito próximo do limite inferior da tela */
 }
 
 #container {
   width: 100%;
+  min-height: 100dvh; /* for modern browsers */
   max-width: 380px;
   margin: 40px auto 0px;
 
@@ -148,7 +154,7 @@ ul {
       align-items: center;
       justify-content: center;
 
-      padding: 12px 20px;
+      padding: 15px 25px;
 
       text-decoration: none;
       font-weight: 500;
