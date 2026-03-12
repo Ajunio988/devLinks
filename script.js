@@ -109,7 +109,7 @@ const i18n = {
     "social.linkedIn": "Meu LinkedIn",
     "social.github": "Meu GitHub",
     "certificações": "Certificações", 
-    portfolio: "Veja o meu Portfólio",
+    portfolio: "Veja o meu Portfólio (Em construção)",
     contactEmail: "Entre em contato",
     "social.description":
       "Siga-me nas redes sociais e entre em contato para projetos.",
@@ -121,7 +121,7 @@ const i18n = {
     "social.linkedIn": "My LinkedIn",
     "social.github": "My GitHub",
     "certificações": "Certifications", 
-    portfolio: "See my Portfolio",
+    portfolio: "See my Portfolio (In construction)",
     contactEmail: "Contact me",
     "social.description":
       "Follow me on social media and contact me for projects.",
